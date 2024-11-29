@@ -9,6 +9,8 @@ import reviewRoutes from "./routes/reviewRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
+const __dirname = path.resolve();
+
 dotenv.config();
 connectDB();
 const port = process.env.PORT || 5000;
